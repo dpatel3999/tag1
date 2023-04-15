@@ -5,7 +5,7 @@ name: CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
+  release:
     tags:
       - v1.0.1
 #     branches: [ "main" ]
@@ -19,7 +19,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    if: ( github.event_name == 'push' && github.event.ref == 'ref/tags/v1.0.1' )
+    if: ( github.event_name == 'release' && github.event.ref == 'ref/tags/v1.0.1' )
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 

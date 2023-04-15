@@ -9,7 +9,7 @@ on:
     inputs:
       tags:
         description: 'select tag'
-        required: true
+        required: false
         type: string
           
 #     branches: [ "main" ]

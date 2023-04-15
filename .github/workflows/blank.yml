@@ -9,8 +9,8 @@ on:
     inputs:
       tags:
         description: 'select tag'
-        required: false
-        type: string
+#         required: false
+#         type: string
           
 #     branches: [ "main" ]
 #   pull_request:

@@ -10,6 +10,7 @@ on:
       tags:
         description: 'select tag'
         required: true
+        type: string
           
 #     branches: [ "main" ]
 #   pull_request:

@@ -22,7 +22,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-#     if: ( github.event_name == 'release' && github.event.ref == 'ref/tags/v1.0.1' )
+    if: ( github.event.ref == 'ref/tags/v1.*' )
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 

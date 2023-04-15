@@ -24,7 +24,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
 #     if: ( github.event.ref == 'refs/tags/v1.0.1' )
-    if: ( github.event_name == 'push' && github.event.ref == 'refs/heads/main' )
+    if: ( github.event_name == 'push' && github.event.ref == 'refs/heads/v1.0.1' )
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 

@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   workflow_dispatch:
-    inputs:
-      tags:
-        description: 'select tag'
+#     inputs:
+#       tags:
+#         description: 'select tag'
 #         required: false
 #         type: string
           
@@ -23,7 +23,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-#     if: ${{ inputs.tags == 'v1.*' }}
+#     if: ( github.event.ref == 'refs/tags/v1.0.1' )
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
